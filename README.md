@@ -27,7 +27,7 @@ This repository demonstrates practical implementation of automated REST API data
 ## 📂 Project Blueprint
 
 ```text
-├── vmanage_inventory.py      # Core modular automation engine 
+├── cisco_sdwan_api.py      # Core modular automation engine 
 ├── .gitignore                # Excludes python bytecaches and local testing files
 ├── requirements.txt          # Packages required by a script to be working 
 └── README.md                 # Detailed technical documentation
