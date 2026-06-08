@@ -30,3 +30,28 @@ This repository demonstrates practical implementation of automated REST API data
 ├── vmanage_inventory.py      # Core modular automation engine 
 ├── .gitignore                # Excludes python bytecaches and local testing files
 └── README.md                 # Detailed technical documentation
+```
+
+## SAMPLE OUTPUT
+```text
+        SDWAN Devices Certificates        
+┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Device Type ┃ Expiration Date          ┃
+┡━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ vbond       │ Jul 08 16:17:34 2026 GMT │
+│ vmanage     │ Aug 07 11:14:44 2026 GMT │
+│ vsmart      │ Jul 08 16:17:53 2026 GMT │
+└─────────────┴──────────────────────────┘
+                                         SDWAN Devices                                         
+┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━┓
+┃ Hostname    ┃ Device-Model ┃ UUID                                     ┃ System-IP ┃ Site-ID ┃
+┡━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━┩
+│ vManage     │ vmanage      │ 0b7491d5-8367-4240-8108-00de5ba53d14     │ 1.1.1.20  │ 1       │
+│ vSmart      │ vsmart       │ a94d2e05-d621-4ef4-af6b-a599f3fd4bc7     │ 1.1.1.30  │ 1       │
+│ vBond       │ vedge-cloud  │ 7fb6495d-4b8e-484c-9976-cd508cb9e16f     │ 1.1.1.10  │ 1       │
+│ BR1-cEdge-1 │ vedge-C8000V │ C8K-6367175e-2df8-40f2-8793-772f91d444df │ 1.1.1.80  │ 101     │
+│ BR2-cEdge-1 │ vedge-C8000V │ C8K-e95cfdf6-7d55-4dd3-8a9c-6f6c5fc6a369 │ 1.1.1.100 │ 102     │
+│ BR3-cEdge-1 │ vedge-C8000V │ C8K-3f46e159-c306-45e4-b101-9e756271df65 │ 1.1.1.110 │ 103     │
+│ DC1-cEdge-1 │ vedge-C8000V │ C8K-27b29de9-f227-4bbc-8ccc-86efaf6c3448 │ 1.1.1.40  │ 10      │
+│ DC2-cEdge-1 │ vedge-C8000V │ C8K-dff0d720-003d-4b3a-9259-4951913fc1c5 │ 1.1.1.60  │ 20      │
+└─────────────┴──────────────┴──────────────────────────────────────────┴───────────┴─────────┘
