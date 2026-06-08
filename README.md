@@ -27,10 +27,29 @@ A Python-based network automation tool designed to interface with the Cisco SD-W
 ├── .gitignore                # Excludes python bytecaches and local testing files
 ├── requirements.txt          # Packages required by a script to be working 
 └── README.md                 # Detailed technical documentation
-
 ```
 
-## SAMPLE OUTPUT
+---
+
+## 💻 Installation & Usage
+1. Replicate Local Repository
+```bash
+git clone https://github.com/MarcinSZN/cisco-sdwan-data-collector.git
+```   
+2. Install Required Modules
+```bash
+pip install requirements.txt
+```
+3. Run the Tool
+```bash
+python cisco_sdwan_api.py
+```
+
+---
+
+## 📊 Sample Execution Dashboards
+1. Control Plane Certificate Overview Table
+
 ```text
         SDWAN Devices Certificates        
 ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -40,6 +59,10 @@ A Python-based network automation tool designed to interface with the Cisco SD-W
 │ vmanage     │ Aug 07 11:14:44 2026 GMT │
 │ vsmart      │ Jul 08 16:17:53 2026 GMT │
 └─────────────┴──────────────────────────┘
+```
+
+2. Edge Active Physical / Virtual Infrastructure Inventory
+```text
                                          SDWAN Devices                                         
 ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━┓
 ┃ Hostname    ┃ Device-Model ┃ UUID                                     ┃ System-IP ┃ Site-ID ┃
@@ -59,5 +82,5 @@ A Python-based network automation tool designed to interface with the Cisco SD-W
 
 ## DISCLAIMER
 
-Script tested in a lab environment with SD-WAN version 20.16.1. Script was used to demonstrate how programmaticaly some informational data can be extracted from SD-WAN Controller using REST API and Python.
+Script tested in a lab environment with SD-WAN version 20.16.1. Script was used to demonstrate how programmaticaly **some** informational data can be extracted from SD-WAN Controller using REST API and Python.
 Solution might crash unexpected, it not handles every possible error (sorry for that :))
